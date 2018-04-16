@@ -29,5 +29,9 @@ namespace codefirst.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<codefirst.Models.Places.City> Cities { get; set; }
+
+        public System.Data.Entity.DbSet<codefirst.Models.Places.Province> Provinces { get; set; }
     }
 }
